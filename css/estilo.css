@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main h2 {
+    text-align: center;
+    font-weight: 800;
+    padding: 0 20px 20px 20px;
+    font-size: 30px;
+    letter-spacing: .5px;
+}
+
+main h3 {
+    text-align: center;
+    display: block;
+    color: #2f8fff;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 50px 0 0 0;
+}
+
+/*cabeçalho*/
+
+header {
+    background-color: #0d0d0d;
+}
+
+header .navbar {
+    background-color: #0d0d0d !important;
+    padding: 15px 30px;
+}
+
+header img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.navbar-brand strong {
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #e6e6e6 !important;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .5px;
+    margin: 0 8px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #2f8fff !important;
+}
+
+header .form-control {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    color: #fff;
+    min-width: 320px;
+}
+
+
+.navbar-toggler {
+    border-color: #444;
+}
+
+/*Conteudo principal*/
+
+main {
+    min-height: 500px;
+    flex: 1;
+}
+
+/*banner*/
+
+#section-banners {
+    padding: 0;
+}
+
+#section-banners .carousel {
+    position: relative;
+}
+
+#section-banners .carousel-item {
+    position: relative;
+}
+
+#section-banners .carousel-item img {
+    min-height: 500px;
+    max-height: 560px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.55);
+}
+
+/*Produtos vendidos*/
+
+#section-vendidos {
+    text-align: center;
+    padding: 20px 60px;
+}
+
+
+#section-vendidos .card-group {
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#section-vendidos img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+#section-vendidos .card {
+    margin: 5px;
+    border: 1px solid #585555;
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+#section-vendidos .card-title {
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#section-vendidos .card-text {
+    font-size: 13px;
+    color: #666;
+}
+
+#section-vendidos .preco {
+    color: #FF0000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+#section-vendidos .card-body .btn-primary {
+    background-color: #0d0d0d;
+    border-color: #0d0d0d;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: .5px;
+    border-radius: 0;
+    padding: 10px;
+}
+
+#section-vendidos .card-body .btn-primary:hover {
+    background-color: #2f8fff;
+    border-color: #2f8fff;
+}
+
+/* fale conosco */
+
+#section_conosco {
+    text-align: center;
+    padding: 50px 60px;
+}
+
+.card_conosco {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #0d0d0d;
+    border-radius: 10px;
+    text-align: justify;
+    margin: 0 0 59px 0;
+    padding: 20px 30px;
+
+}
+
+.fila_contacto {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 60px;
+}
+
+.columna_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+
+
+}
+
+#form_conosco {
+    flex: 1;
+    border: 1px solid #0d0d0d;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#form_conosco label {
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+#form_conosco input,
+#form_conosco textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #585555;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.button_form {
+    width: 100%;
+    background-color: #2f8fff;
+    color: #fff;
+    border-color: #FFF;
+    padding: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+
+}
+
+.button_form:hover {
+    background-color: #0d0d0d;
+}
+
+/*Rodapé*/
+footer {
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+    height: 100px;
+}
+
+footer p {
+    font-weight: 600;
+    padding: 10px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+footer .Logo {
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px;
+}
+
+
+/*Botão Voltar topo*/
+#voltar-topo {
+    position: fixed;
+    bottom: 15px;
+    right: 30px;
+    background-color: #2f8fff;
+    color: #FFF;
+}
+
+/* página de login  */
+
+#section-login {
+    margin-top: 100px;
+}
+
+#section-login h1 {
+    text-align: center;
+}
+
+#section-login input {
+    width: 100%;
+}
+
+/* Formulário de cadastro*/
+
+#section-cadastro {
+    padding: 5px;
+    text-align: center;
+    background-color: #FFF;
+}
+
+#form-cadastrar {
+    padding: 5px;
+    display: none;
+}
